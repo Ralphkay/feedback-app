@@ -6,11 +6,10 @@ export default function FeedbackList({feedback, handleDelete}){
         return <>No feedback yet</>
     }
    return <>
-        <h1 >List {feedback.length}</h1>
+        {/* <h1 >Notes <small>{feedback.length}</small></h1> */}
        {
-
            feedback.map((item)=>{
-               return <FeedbackItem key={item.id} item={item} handleDelete={handleDelete}/>
+               return <FeedbackItem key={item.id} item={item} handleDelete={(e)=>handleDelete(item.id)}/>
            })
        }
         </>

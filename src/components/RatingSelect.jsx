@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 
-export default function RatingSelect() {
-    const [selected,setSelected] = useState(1)
+export default function RatingSelect({select}) {
+    const [selected,setSelected] = useState(0)
 
-    const handleChange = ()=>{
-
+    const handleChange = (e)=>{
+        console.log(+e.target.value)
+        setSelected(+e.target.value)
+        select(+e.target.value)
     }
+    
   return <div>
       <ul className="rating">
         <li>

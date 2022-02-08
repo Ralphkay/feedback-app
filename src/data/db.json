@@ -1,0 +1,39 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "rating": 2,
+      "text": "This is feedback item 1 coming from the backend"
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "text": "This is feedback item 2 coming from the backend"
+    },
+    {
+      "text": "This is feedback item 3 coming from the backend",
+      "rating": 5,
+      "id": 3
+    },
+    {
+      "text": "This is feedback item 4 coming from the backend",
+      "rating": 4,
+      "id": 4
+    },
+    {
+      "text": "This is feedback item 5 coming from the backend",
+      "rating": 1,
+      "id": 5
+    },
+    {
+      "text": "Adding two new people to the bus",
+      "rating": 4,
+      "id": 6
+    },
+    {
+      "text": "You are not friendly",
+      "rating": 5,
+      "id": 7
+    }
+  ]
+}
