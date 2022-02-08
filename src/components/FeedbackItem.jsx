@@ -1,19 +1,27 @@
-import {useState} from 'react'
-export default function FeedbackItem(){
-    const [rating, setRating] = useState(7)
-    const [text, setText] = useState('This is an example of a feedback item')
+import Card from './shared/Card'
+import PropTypes from 'prop-types'
+import {FaTimes} from 'react-icons/fa'
 
-    let handleClick = ()=>{
-        // setRating((prev)=>prev+1)
-        setRating(10)
-    }
+
+export default function FeedbackItem({item, handleDelete}){
+
+  
+
     return (
-        <div className="card">
-            <div className="num-display">{rating}</div>
+        <Card>
+            <div className="num-display">{item.rating}</div>
             <div className="text-display">
-                {text}
+                {item.text}
             </div>
-            <button onClick={handleClick}>Click</button>
-        </div>
+
+            <button onClick={(e)=>{handleDelete()}} className="close">
+                <FaTimes color="purple"/>
+            </button>
+
+        </Card>
     )
+}
+
+FeedbackItem.propTypes = {
+    item:PropTypes.object.isRequired
 }

@@ -2,17 +2,17 @@ const FeedbackData = [
 
           {
             id: 1,
-            rating: 10,
+            rating: 5,
             text: "This is feedback item 1 coming from the backend"
           },
           {
             id: 2,
-            rating: 8,
+            rating: 4,
             text: "This is feedback item 2 coming from the backend"
           },
           {
             text: "This is feedback item 3 coming from the backend",
-            rating: 10,
+            rating: 5,
             id: 3
           }
  
