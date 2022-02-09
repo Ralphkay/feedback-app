@@ -49,7 +49,6 @@ const App = ()=>{
             body: JSON.stringify(d)
         }).then((data => console.log('Success :' + data)))
 
-        setFeedback('')
     }
 
     return (

@@ -31,6 +31,7 @@ export default function FeedbackForm({handleForm}) {
             rating
         }
         handleForm(data)
+        setText('')
     }
 
   return <Card>
