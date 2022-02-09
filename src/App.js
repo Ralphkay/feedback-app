@@ -39,7 +39,7 @@ const App = ()=>{
     const addFeedback = (data)=>{
         let id = Number(feedback.length + 1)
         const d = {...data, id}
-        setFeedback([...feedback, d])
+        setFeedback([d, ...feedback])
 
         fetch('http://localhost:3000/notes', {
             method:'POST',
@@ -48,6 +48,8 @@ const App = ()=>{
             },
             body: JSON.stringify(d)
         }).then((data => console.log('Success :' + data)))
+
+        setFeedback('')
     }
 
     return (
